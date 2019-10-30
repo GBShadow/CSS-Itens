@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Landing Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,6 +16,32 @@
         <div class="layer"></div>
     </div>
     <section>
+        <div class="header">
+            <h2 class="logo">Your Logo</h2>
+            <i class="fa fa-bars x2" onclick="menuToggle()"></i>
+            <ul id="navigation">
+                <li>
+                    <a href="#" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Our Work</a>
+                </li>
+                <li>
+                    <a href="#">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            <i class="fa fa-times x2" onclick="menuToggle()"></i>
+
+            </ul>
+        </div>
         <div class="bannerText">
             <h2>Think Creative</h2>
             <h3>And Make Innovative Design</h3>
@@ -23,10 +50,24 @@
                 nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum
                 dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui
                 officia deserunt mollit anim id est laborum.</p>
-            <a href="#">Read More</a>
+            <a class="read-more" href="#">Read More</a>
         </div>
         <img src="bulb.jpg" class="bulb">
-    </section>                         
+        <ul class="sci">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+        <div class="element1"></div>
+        <div class="element2"></div>
+    </section>
+    <script type="text/javascript">
+        function menuToggle(){
+            var element = document.getElementById("navigation");
+            element.classList.toggle("show");
+        }
+    </script>
 </body>
 
 </html>
